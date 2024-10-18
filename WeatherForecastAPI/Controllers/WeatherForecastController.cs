@@ -20,7 +20,7 @@ namespace WeatherForecastAPI.Controllers
         [HttpGet("{city}")]
         public async Task<IActionResult> GetWeather(string city)
         {
-            if (city.GetType() == typeof(string))
+            if (city.GetType() == typeof(int))
             {
                 throw new WeatherException("OOpsie! Numerical cities are yet to come into existence!");
             }
