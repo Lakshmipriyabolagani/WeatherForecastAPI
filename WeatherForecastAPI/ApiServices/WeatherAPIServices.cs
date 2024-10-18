@@ -28,7 +28,6 @@ namespace WeatherForecastAPI.ApiServices
                 Temperature = weatherData.GetProperty("main").GetProperty("temp").GetDouble(),
                 Humidity = weatherData.GetProperty("main").GetProperty("humidity").GetInt32(),
                 Wind = weatherData.GetProperty("wind").GetProperty("speed").GetDouble(),
-                Precipitation = weatherData.TryGetProperty("rain", out var rain) ? rain.GetProperty("1h").GetDouble() : 0,
                 DateTime = DateTime.Now
             };
 
