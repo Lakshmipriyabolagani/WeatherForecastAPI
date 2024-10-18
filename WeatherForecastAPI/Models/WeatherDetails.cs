@@ -12,7 +12,6 @@ namespace WeatherForecastAPI
         public double? Temperature { get; set; }
         public double? Humidity { get; set; }
         public double? Wind { get; set; }
-        public double? Precipitation { get; set; }
         public DateTime DateTime { get; set; }
 
     }
